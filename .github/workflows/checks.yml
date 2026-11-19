@@ -1,0 +1,16 @@
+name: Verify coursework
+on: [push, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: node --check docs/app.js
+      - run: node --check Проєкт/figma-plugin/code.js
+      - run: python Проєкт/scripts/metrics_test.py

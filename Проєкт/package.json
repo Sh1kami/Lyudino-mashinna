@@ -1,0 +1,10 @@
+{
+  "name": "hci-labs-panchyshkin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx http-server . -p 8091 -c-1",
+    "check": "node --check app.js"
+  },
+  "description": "Навчальні UX-прототипи. Варіант 19."
+}
