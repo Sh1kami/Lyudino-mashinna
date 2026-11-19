@@ -1,0 +1,202 @@
+[
+  {
+    "id": "D01",
+    "version": "desktop",
+    "severity": 3,
+    "heuristic": "H2",
+    "screen": "login",
+    "description": "Перехід з україномовної платформи до англомовного входу.",
+    "recommendation": "Зберігати українську мову у формі входу та відновленні пароля.",
+    "evidence": "login-desktop.png"
+  },
+  {
+    "id": "D02",
+    "version": "desktop",
+    "severity": 3,
+    "heuristic": "H4",
+    "screen": "login",
+    "description": "Білий текст основної помаранчевої кнопки не проходить перевірку контрасту axe.",
+    "recommendation": "Затемнити фон кнопки й повторити вимірювання 4.5:1.",
+    "evidence": "login-desktop.png"
+  },
+  {
+    "id": "D03",
+    "version": "desktop",
+    "severity": 3,
+    "heuristic": "H6",
+    "screen": "home",
+    "description": "axe зафіксував посилання без доступної назви: непідписані переходи з контентних блоків.",
+    "recommendation": "Надати посиланням видимі назви або доступні назви з темою курсу.",
+    "evidence": "home-desktop.png"
+  },
+  {
+    "id": "D04",
+    "version": "desktop",
+    "severity": 3,
+    "heuristic": "H4",
+    "screen": "catalog",
+    "description": "Поле сортування не має доступної назви (select-name).",
+    "recommendation": "Пов’язати видимий підпис «Сортування» з select через label/for.",
+    "evidence": "catalog-desktop.png"
+  },
+  {
+    "id": "D05",
+    "version": "desktop",
+    "severity": 3,
+    "heuristic": "H6",
+    "screen": "catalog",
+    "description": "Два числові поля тривалості не мають підписів, визначених програмно.",
+    "recommendation": "Підписати мінімальну й максимальну тривалість та одиницю вимірювання.",
+    "evidence": "catalog-desktop.png"
+  },
+  {
+    "id": "D06",
+    "version": "desktop",
+    "severity": 2,
+    "heuristic": "H2",
+    "screen": "register",
+    "description": "Реєстрація поєднує англомовний основний текст та україномовні соціальні кнопки.",
+    "recommendation": "Уніфікувати локалізацію заголовків, умов і дій.",
+    "evidence": "register-desktop.png"
+  },
+  {
+    "id": "D07",
+    "version": "desktop",
+    "severity": 2,
+    "heuristic": "H5",
+    "screen": "login",
+    "description": "До введення пароля немає підказки про вимоги чи формат облікового ідентифікатора.",
+    "recommendation": "Показувати контекстні підказки та правила у місці введення.",
+    "evidence": "login-desktop.png"
+  },
+  {
+    "id": "D08",
+    "version": "desktop",
+    "severity": 2,
+    "heuristic": "H7",
+    "screen": "catalog",
+    "description": "У каталозі немає дії порівняння кількох курсів у спільній таблиці.",
+    "recommendation": "Додати порівняння 2–3 курсів за ціною, тривалістю та сертифікацією.",
+    "evidence": "catalog-desktop.png"
+  },
+  {
+    "id": "D09",
+    "version": "desktop",
+    "severity": 2,
+    "heuristic": "H8",
+    "screen": "home",
+    "description": "Первинний вибір курсу віддалено від першого екрана промоційними блоками.",
+    "recommendation": "Додати до першого екрана пряму дію «Знайти курс» та тематичні переходи.",
+    "evidence": "home-desktop.png"
+  },
+  {
+    "id": "D10",
+    "version": "desktop",
+    "severity": 2,
+    "heuristic": "H1",
+    "screen": "register",
+    "description": "Екран email із Continue не показує етапи й очікувані наступні кроки реєстрації.",
+    "recommendation": "Показати «Крок 1: email», перелік подальших кроків і спосіб повернення.",
+    "evidence": "register-desktop.png"
+  },
+  {
+    "id": "M01",
+    "version": "mobile",
+    "severity": 3,
+    "heuristic": "H2",
+    "screen": "login",
+    "description": "На мобільному англомовний вхід зберігає мовний розрив основного сценарію.",
+    "recommendation": "Зберігати мову від каталогу до входу та відновлення.",
+    "evidence": "login-mobile.png"
+  },
+  {
+    "id": "M02",
+    "version": "mobile",
+    "severity": 3,
+    "heuristic": "H4",
+    "screen": "login",
+    "description": "Недостатній контраст білої назви Sign in на помаранчевому фоні.",
+    "recommendation": "Застосувати перевірену контрастну пару для всіх станів кнопки.",
+    "evidence": "login-mobile.png"
+  },
+  {
+    "id": "M03",
+    "version": "mobile",
+    "severity": 3,
+    "heuristic": "H6",
+    "screen": "home",
+    "description": "Непідписані посилання залишаються без доступних назв для мобільного скрінридера.",
+    "recommendation": "Присвоїти доступні назви та перевірити порядок читання.",
+    "evidence": "home-mobile.png"
+  },
+  {
+    "id": "M04",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H6",
+    "screen": "home",
+    "description": "Вхід і каталог на вузькому екрані приховані за меню без постійних текстових підписів.",
+    "recommendation": "Зробити каталог помітною текстовою дією біля основного сценарію.",
+    "evidence": "home-mobile.png"
+  },
+  {
+    "id": "M05",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H8",
+    "screen": "home",
+    "description": "Зображення у hero передує назві й цільовій дії та займає значну частину вузького екрана.",
+    "recommendation": "Зменшити висоту ілюстрації та підняти пошук курсу.",
+    "evidence": "home-mobile.png"
+  },
+  {
+    "id": "M06",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H8",
+    "screen": "home",
+    "description": "Прикріплена дія «Приєднатися» накладається на інформаційний блок статистики під час перегляду.",
+    "recommendation": "Врахувати нижній відступ під sticky-елемент і перевірити перекриття.",
+    "evidence": "home-mobile.png"
+  },
+  {
+    "id": "M07",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H7",
+    "screen": "catalog",
+    "description": "Промоційна карусель розташована перед результатами й відсуває результати пошуку вниз.",
+    "recommendation": "Спочатку показувати знайдені курси, пропозиції перенести нижче.",
+    "evidence": "catalog-mobile.png"
+  },
+  {
+    "id": "M08",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H6",
+    "screen": "catalog",
+    "description": "Параметри фільтрів приховані у панелі: без відкриття складніше оцінити їхній набір.",
+    "recommendation": "Показувати активні фільтри й кількість результатів поряд із кнопкою.",
+    "evidence": "catalog-mobile.png"
+  },
+  {
+    "id": "M09",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H2",
+    "screen": "register",
+    "description": "Мобільна форма реєстрації містить англомовні умови й англомовну основну дію.",
+    "recommendation": "Локалізувати текст та пояснити умови звичною користувачеві мовою.",
+    "evidence": "register-mobile.png"
+  },
+  {
+    "id": "M10",
+    "version": "mobile",
+    "severity": 2,
+    "heuristic": "H1",
+    "screen": "register",
+    "description": "Одноколонкова форма email не повідомляє, скільки етапів потрібно завершити.",
+    "recommendation": "Показувати короткий індикатор етапів, не приховуючи можливість повернення.",
+    "evidence": "register-mobile.png"
+  }
+]

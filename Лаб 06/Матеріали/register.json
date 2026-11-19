@@ -1,0 +1,137 @@
+[
+  {
+    "id": "HE01",
+    "severity": 3,
+    "heuristic": "H1",
+    "screen": "today",
+    "description": "Відмітка прийому не має власного окремого журналу подій.",
+    "recommendation": "Додати історію з часом і можливістю скасування.",
+    "plan": "Partially"
+  },
+  {
+    "id": "HE02",
+    "severity": 3,
+    "heuristic": "H5",
+    "screen": "add",
+    "description": "Можна зберегти однакові назву й час повторно.",
+    "recommendation": "Перед збереженням перевіряти дубль і пропонувати відкрити запис.",
+    "plan": "No"
+  },
+  {
+    "id": "HE03",
+    "severity": 3,
+    "heuristic": "H3",
+    "screen": "today",
+    "description": "Немає дії редагування наявного запису.",
+    "recommendation": "Додати меню «Редагувати» й зберігати попередні значення.",
+    "plan": "No"
+  },
+  {
+    "id": "HE04",
+    "severity": 3,
+    "heuristic": "H1",
+    "screen": "today",
+    "description": "Немає системних сповіщень, хоча назва продукту пов’язана з нагадуваннями.",
+    "recommendation": "Пояснювати межі демонстрації; у продукті реалізувати дозвіл і перевірку сповіщень.",
+    "plan": "Partially"
+  },
+  {
+    "id": "HE05",
+    "severity": 3,
+    "heuristic": "H9",
+    "screen": "profile",
+    "description": "При блокуванні localStorage запис не збережеться після закриття.",
+    "recommendation": "Постійно показувати стан збереження й запропонувати експорт.",
+    "plan": "Partially"
+  },
+  {
+    "id": "HE06",
+    "severity": 2,
+    "heuristic": "H7",
+    "screen": "today",
+    "description": "Немає пошуку за назвою в довгому списку.",
+    "recommendation": "Додати локальний пошук, зберігаючи стан фільтра.",
+    "plan": "No"
+  },
+  {
+    "id": "HE07",
+    "severity": 2,
+    "heuristic": "H7",
+    "screen": "today",
+    "description": "Немає поділу списку на час доби.",
+    "recommendation": "Додати групи «Ранок», «День», «Вечір».",
+    "plan": "No"
+  },
+  {
+    "id": "HE08",
+    "severity": 2,
+    "heuristic": "H3",
+    "screen": "add",
+    "description": "Чернетка не відновлюється після випадкового переходу.",
+    "recommendation": "Зберігати чернетку, перед виходом пропонувати повернення.",
+    "plan": "No"
+  },
+  {
+    "id": "HE09",
+    "severity": 2,
+    "heuristic": "H4",
+    "screen": "profile",
+    "description": "Розмір тексту змінює базовий шрифт, але не всі задані px-розміри заголовків.",
+    "recommendation": "Перевести типографічну шкалу в rem і перевірити масштабування.",
+    "plan": "Yes"
+  },
+  {
+    "id": "HE10",
+    "severity": 2,
+    "heuristic": "H5",
+    "screen": "add",
+    "description": "Немає перевірки надмірних пробілів усередині назви.",
+    "recommendation": "Нормалізувати пробіли, зберігаючи читабельну назву.",
+    "plan": "No"
+  },
+  {
+    "id": "HE11",
+    "severity": 2,
+    "heuristic": "H6",
+    "screen": "today",
+    "description": "Короткі назви Приклад А/Б не пояснюють структуру майбутніх записів.",
+    "recommendation": "Показати безпечний приклад назви та часу в порожньому стані.",
+    "plan": "Partially"
+  },
+  {
+    "id": "HE12",
+    "severity": 2,
+    "heuristic": "H10",
+    "screen": "profile",
+    "description": "Довідка не пояснює відновлення даних після очищення браузера.",
+    "recommendation": "Додати пояснення локального збереження й резервної копії.",
+    "plan": "No"
+  },
+  {
+    "id": "HE13",
+    "severity": 2,
+    "heuristic": "H8",
+    "screen": "today",
+    "description": "Верхній і нижній переходи до профілю дублюються на вузькому екрані.",
+    "recommendation": "Залишити сталу нижню навігацію, у шапці — назву продукту.",
+    "plan": "Yes"
+  },
+  {
+    "id": "HE14",
+    "severity": 2,
+    "heuristic": "H2",
+    "screen": "today",
+    "description": "Фіксована дата не відповідає календарю у наступні дні.",
+    "recommendation": "Формувати дату через Intl.DateTimeFormat із локальним часовим поясом.",
+    "plan": "Yes"
+  },
+  {
+    "id": "HE15",
+    "severity": 1,
+    "heuristic": "H4",
+    "screen": "profile",
+    "description": "Стан великого тексту у select після повернення не віддзеркалює збережене значення.",
+    "recommendation": "Ініціалізувати select значенням зі сховища.",
+    "plan": "Yes"
+  }
+]

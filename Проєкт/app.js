@@ -1,7 +1,7 @@
 'use strict';
-const params=new URLSearchParams(location.search), baseline=params.get('version')==='v1', lang=params.get('app')==='language';
+const params=new URLSearchParams(location.search), baseline=(params.get('version')||document.body.dataset.version)==='v1', lang=params.get('app')==='language';
 document.body.classList.toggle('baseline',baseline);document.body.classList.toggle('language',lang);
-const app=document.querySelector('#app');let screen=params.get('screen')||(lang?'language':'login');
+const app=document.querySelector('#app');let screen=params.get('screen')||document.body.dataset.screen||(lang?'language':'login');
 const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function read(){try{const value=JSON.parse(localStorage.getItem('medtime-demo'));if(Array.isArray(value))return value;}catch{}return [{id:1,name:'Приклад А',time:'08:00',done:false},{id:2,name:'Приклад Б',time:'20:00',done:false}];}
 let records=read();let lastAdded=null;
