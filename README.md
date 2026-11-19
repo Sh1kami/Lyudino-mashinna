@@ -31,3 +31,18 @@ python Проєкт/scripts/metrics_test.py
 Для Moodle в папках лабораторних призначено PDF. Вихідні файли доступні без архівів.
 
 Анкету та сценарії для ЛР2 і ЛР7 підготовлено для збору реальних відповідей. Дослідницькі гіпотези відділено від спостережень; результати учасників не вигадуються.
+
+## Figma
+
+- [Wireframes Lingua](https://www.figma.com/design/xGhbb5XtmCjM1RbEQ0kkS6/?node-id=3-33) · [інтерактивний прототип](https://www.figma.com/proto/xGhbb5XtmCjM1RbEQ0kkS6/?node-id=3-33&starting-point-node-id=3%3A33)
+- [UX-карти: дві UJM та Site Map](https://www.figma.com/design/xGhbb5XtmCjM1RbEQ0kkS6/?node-id=5-247)
+- [Hi-fi MedTime](https://www.figma.com/design/i6imKxUP3aBDBRk4e43AbQ/?node-id=1-73) · [інтерактивний прототип](https://www.figma.com/proto/i6imKxUP3aBDBRk4e43AbQ/?node-id=1-73&starting-point-node-id=1%3A73)
+- [П’ять WCAG-порівнянь](https://www.figma.com/design/i6imKxUP3aBDBRk4e43AbQ/?node-id=1-220)
+
+## Перевірки
+
+Lighthouse Accessibility: Today **90 → 100**, Add **83 → 100**. Axe: після змін **0 автоматичних порушень** на обох екранах. WAVE: після змін **0 Errors та 0 Contrast Errors** на обох екранах; чотири попередження Possible heading на Today розглянуто окремо. Проведено огляд у Speech Viewer NVDA 2026.3.1; аудіовимову не перевіряли з беззвучним синтезатором.
+
+У ЛР6 є реєстр на 15 знахідок і Excel-файл із формульними підрахунками та графіком. Для ЛР2 та ЛР7 підготовлено анкети й сценарії збору реальних відповідей; вигаданих учасників та результатів немає.
+
+Вихідна навчальна версія для повторного аудиту: [Today](https://sh1kami.github.io/Lyudino-mashinna/v1-today.html) · [Add](https://sh1kami.github.io/Lyudino-mashinna/v1-add.html). Виправлена: [Today](https://sh1kami.github.io/Lyudino-mashinna/v2-today.html) · [Add](https://sh1kami.github.io/Lyudino-mashinna/v2-add.html).

@@ -1,0 +1,30 @@
+[
+  {
+    "version": "v1",
+    "screen": "today",
+    "title": "WAVE Report of MedTime — today",
+    "url": "https://wave.webaim.org/report#/https://sh1kami.github.io/Lyudino-mashinna/v1-today.html",
+    "text": "◀\npowered by\nWebAIM\nAddress: \nStyles:OFFON\nSummary\nDetails\nReference\nOrder\nStructure\nContrast\n 1\nErrors  7\nContrast Errors  4\nAlerts  0\nFeatures  5\nStructure  7\nARIA\n\nAIM Score: 6 out of 10\n\n1 Errors\n1 Language missing or invalid\n7 Contrast Errors\n7 Very low contrast\n4 Alerts\n4 Possible heading\n5 Structural Elements\n1 Heading level 1\n1 Unordered list\n1 Header\n1 Navigation\n1 Main content\n7 ARIA\n4 ARIA\n1 ARIA label\n1 ARIA tabindex\n1 ARIA alert or live region\nThe following apply to the entire page:\nLoading..."
+  },
+  {
+    "version": "v1",
+    "screen": "add",
+    "title": "WAVE Report of MedTime — add",
+    "url": "https://wave.webaim.org/report#/https://sh1kami.github.io/Lyudino-mashinna/v1-add.html",
+    "text": "◀\npowered by\nWebAIM\nAddress: \nStyles:OFFON\nSummary\nDetails\nReference\nOrder\nStructure\nContrast\n 3\nErrors  4\nContrast Errors  1\nAlerts  0\nFeatures  4\nStructure  4\nARIA\n\nAIM Score: 6.1 out of 10\n\n3 Errors\n2 Missing form label\n1 Language missing or invalid\n4 Contrast Errors\n4 Very low contrast\n1 Alerts\n1 Select missing label\n4 Structural Elements\n1 Heading level 1\n1 Header\n1 Navigation\n1 Main content\n4 ARIA\n1 ARIA\n1 ARIA label\n1 ARIA tabindex\n1 ARIA alert or live region\nThe following apply to the entire page:\nLoading..."
+  },
+  {
+    "version": "v2",
+    "screen": "today",
+    "title": "WAVE Report of MedTime — today",
+    "url": "https://wave.webaim.org/report#/https://sh1kami.github.io/Lyudino-mashinna/v2-today.html",
+    "text": "◀\npowered by\nWebAIM\nAddress: \nStyles:OFFON\nSummary\nDetails\nReference\nOrder\nStructure\nContrast\n 0\nErrors  0\nContrast Errors  4\nAlerts  1\nFeatures  5\nStructure  10\nARIA\n\nCongratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.\n\nAIM Score: 9.9 out of 10\n\n4 Alerts\n4 Possible heading\n1 Features\n1 Language\n5 Structural Elements\n1 Heading level 1\n1 Unordered list\n1 Header\n1 Navigation\n1 Main content\n10 ARIA\n4 ARIA\n3 ARIA label\n2 ARIA tabindex\n1 ARIA alert or live region\nThe following apply to the entire page:\n*uk*\nLoading..."
+  },
+  {
+    "version": "v2",
+    "screen": "add",
+    "title": "WAVE Report of MedTime — add",
+    "url": "https://wave.webaim.org/report#/https://sh1kami.github.io/Lyudino-mashinna/v2-add.html",
+    "text": "◀\npowered by\nWebAIM\nAddress: \nStyles:OFFON\nSummary\nDetails\nReference\nOrder\nStructure\nContrast\n 0\nErrors  0\nContrast Errors  0\nAlerts  4\nFeatures  4\nStructure  7\nARIA\n\nCongratulations! No errors were detected! Manual testing is still necessary to ensure compliance and optimal accessibility.\n\nAIM Score: 10 out of 10\n\n4 Features\n3 Form label\n1 Language\n4 Structural Elements\n1 Heading level 1\n1 Header\n1 Navigation\n1 Main content\n7 ARIA\n1 ARIA\n1 ARIA label\n2 ARIA description\n2 ARIA tabindex\n1 ARIA alert or live region\nThe following apply to the entire page:\n*uk*\nLoading..."
+  }
+]

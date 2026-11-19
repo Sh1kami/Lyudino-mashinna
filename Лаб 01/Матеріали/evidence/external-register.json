@@ -1,0 +1,178 @@
+{
+  "name": "register",
+  "url": "https://apps.prometheus.org.ua/authn/register",
+  "timestamp": "2026-11-19T17:08:58.719Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.14.1"
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#f57a28",
+                "contrastRatio": 2.72,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button type=\"button\" class=\"button-primary button-lg\">Сontinue</button>",
+                  "target": [
+                    "button"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.72 (foreground color: #ffffff, background color: #f57a28, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" class=\"button-primary button-lg\">Сontinue</button>",
+          "target": [
+            "button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.72 (foreground color: #ffffff, background color: #f57a28, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "bypass",
+      "impact": "serious",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag241",
+        "section508",
+        "section508.22.o",
+        "TTv5",
+        "TT9.a",
+        "EN-301-549",
+        "EN-9.2.4.1",
+        "RGAAv4",
+        "RGAA-12.7.1"
+      ],
+      "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+      "help": "Page must have means to bypass repeated blocks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/bypass?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "internal-link-present",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No valid skip link found"
+            },
+            {
+              "id": "header-present",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Page does not have a heading"
+            },
+            {
+              "id": "landmark",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Page does not have a landmark region"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<html lang=\"en-us\" dir=\"ltr\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+        }
+      ]
+    }
+  ],
+  "dom": [
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": null,
+      "rect": {
+        "width": 340,
+        "height": 47
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Сontinue",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 348,
+        "height": 58
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Sign in",
+      "href": "/authn/login",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 49.453125,
+        "height": 21.125
+      }
+    }
+  ],
+  "mobileTargets": [
+    {
+      "name": "",
+      "tag": "INPUT",
+      "width": 350,
+      "height": 47
+    },
+    {
+      "name": "Сontinue",
+      "tag": "BUTTON",
+      "width": 348,
+      "height": 58
+    },
+    {
+      "name": "Sign in",
+      "tag": "A",
+      "width": 49.453125,
+      "height": 21.125
+    }
+  ]
+}

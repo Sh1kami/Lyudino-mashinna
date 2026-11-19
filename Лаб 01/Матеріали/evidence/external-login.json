@@ -1,0 +1,263 @@
+{
+  "name": "login",
+  "url": "https://apps.prometheus.org.ua/authn/login",
+  "timestamp": "2026-11-19T17:08:57.446Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.14.1"
+  },
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#f57a28",
+                "contrastRatio": 2.72,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<button aria-live=\"assertive\" aria-disabled=\"false\" name=\"sign-in\" id=\"sign-in\" type=\"submit\" class=\"pgn__stateful-btn pgn__stateful-btn-state-default button-primary button-lg tw-mt-[24px] btn btn-primary\">",
+                  "target": [
+                    "#sign-in"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.72 (foreground color: #ffffff, background color: #f57a28, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>Sign in</span>",
+          "target": [
+            ".d-flex > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.72 (foreground color: #ffffff, background color: #f57a28, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "bypass",
+      "impact": "serious",
+      "tags": [
+        "cat.keyboard",
+        "wcag2a",
+        "wcag241",
+        "section508",
+        "section508.22.o",
+        "TTv5",
+        "TT9.a",
+        "EN-301-549",
+        "EN-9.2.4.1",
+        "RGAAv4",
+        "RGAA-12.7.1"
+      ],
+      "description": "Ensure each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+      "help": "Page must have means to bypass repeated blocks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/bypass?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "internal-link-present",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "No valid skip link found"
+            },
+            {
+              "id": "header-present",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Page does not have a heading"
+            },
+            {
+              "id": "landmark",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Page does not have a landmark region"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<html lang=\"en-us\" dir=\"ltr\">",
+          "target": [
+            "html"
+          ],
+          "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+        }
+      ]
+    }
+  ],
+  "dom": [
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": null,
+      "rect": {
+        "width": 340,
+        "height": 47
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "password",
+      "placeholder": null,
+      "rect": {
+        "width": 340,
+        "height": 47
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Show password",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 36,
+        "height": 36
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Forgot password",
+      "href": "/authn/reset",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 123.15625,
+        "height": 19
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sign in",
+      "href": null,
+      "type": "submit",
+      "placeholder": null,
+      "rect": {
+        "width": 348,
+        "height": 55.328125
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Продовжити з Facebook\nSign in with Facebook",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 348,
+        "height": 58
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Продовжити з Google\nSign in with Google",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 348,
+        "height": 58
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Join",
+      "href": "/authn/register",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 31.3125,
+        "height": 21.125
+      }
+    }
+  ],
+  "mobileTargets": [
+    {
+      "name": "",
+      "tag": "INPUT",
+      "width": 350,
+      "height": 47
+    },
+    {
+      "name": "",
+      "tag": "INPUT",
+      "width": 350,
+      "height": 47
+    },
+    {
+      "name": "Show password",
+      "tag": "BUTTON",
+      "width": 36,
+      "height": 36
+    },
+    {
+      "name": "Forgot password",
+      "tag": "A",
+      "width": 123.15625,
+      "height": 19
+    },
+    {
+      "name": "Sign in",
+      "tag": "BUTTON",
+      "width": 348,
+      "height": 55.328125
+    },
+    {
+      "name": "Продовжити з Facebook\nSign in with Facebook",
+      "tag": "BUTTON",
+      "width": 348,
+      "height": 58
+    },
+    {
+      "name": "Продовжити з Google\nSign in with Google",
+      "tag": "BUTTON",
+      "width": 348,
+      "height": 58
+    },
+    {
+      "name": "Join",
+      "tag": "A",
+      "width": 31.3125,
+      "height": 21.125
+    }
+  ]
+}

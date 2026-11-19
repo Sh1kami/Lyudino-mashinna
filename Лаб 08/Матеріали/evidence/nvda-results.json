@@ -1,0 +1,20 @@
+{
+  "tool": "NVDA 2026.3.1",
+  "mode": "Speech Viewer; silent synthesizer; inspection during page opening",
+  "url": "http://127.0.0.1:8091/v2-add.html",
+  "transcript": "MedTime — add – Google Chrome для тестирования  окно\nMedTime — add – Google Chrome для тестирования  область\nMedTime — add\nвнутри страничная  ссылка    Украинский (не поддерживается)  До основного вмісту  баннер ориентир    ссылка    MedTime  Навчальний прототип\n\nПрофіль\n  основная часть ориентир    Нове нагадування\n  Введіть назву та зручний час.",
+  "observations": [
+    {
+      "id": "SR01",
+      "result": "NVDA identifies the skip link as an in-page link and reads its Ukrainian label."
+    },
+    {
+      "id": "SR02",
+      "result": "NVDA identifies banner and main landmarks and reads the MedTime link."
+    },
+    {
+      "id": "SR03",
+      "result": "NVDA reads the page heading and instruction; Ukrainian is detected, audio pronunciation is not checked with the silent synthesizer."
+    }
+  ]
+}

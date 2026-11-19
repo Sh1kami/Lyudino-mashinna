@@ -1,0 +1,4177 @@
+{
+  "name": "catalog",
+  "url": "https://prometheus.org.ua/courses-catalog",
+  "timestamp": "2026-11-19T17:08:51.669Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.14.1"
+  },
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/button-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"submit\" class=\"absolute left-7 top-1/2 -translate-y-1/2 transform lg:left-3\">",
+          "target": [
+            ".lg\\:left-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e67d2d",
+                "contrastRatio": 2.86,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"register-button btn-sm btn-primary px-8 md:max-w-[300px] hidden\" href=\"https://apps.prometheus.org.ua/authn/register\">Приєднатися</a>",
+                  "target": [
+                    ".register-button"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"register-button btn-sm btn-primary px-8 md:max-w-[300px] hidden\" href=\"https://apps.prometheus.org.ua/authn/register\">Приєднатися</a>",
+          "target": [
+            ".register-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    },
+    {
+      "id": "label",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "description": "Ensure every form element has a label",
+      "help": "Form elements must have labels",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input type=\"text\" class=\"sliderValue start border-solid border border-[#BBBBBD] rounded-[4px] w-8 text-center\" data-index=\"0\" value=\"1\" name=\"weeks_min\" style=\"\">",
+          "target": [
+            ".start.border-solid[data-index=\"0\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        },
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "non-empty-placeholder",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no placeholder attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<input type=\"text\" class=\"sliderValue end border-solid border border-[#BBBBBD] rounded-[4px] w-8 text-center\" data-index=\"1\" value=\"20\" name=\"weeks_max\" style=\"\">",
+          "target": [
+            ".end.border-solid[data-index=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.facebook.com/prometheusmooc\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.instagram.com/prometheus.ua\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://ua.linkedin.com/school/prometheus-mooc/\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.youtube.com/channel/UCp_ZjjvKE_lScv09caE6z3A\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": {
+                "values": "h3"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<h3 class=\"mb-8 pl-3 text-[1.5rem] font-medium text-neutral-1000 xl:mb-6\">Курси</h3>",
+                  "target": [
+                    ".pl-3"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "List element has direct children that are not allowed: h3"
+            }
+          ],
+          "impact": "serious",
+          "html": "<ul>",
+          "target": [
+            ".overflow-y-auto.gap-8.flex-col > ul"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: h3"
+        }
+      ]
+    },
+    {
+      "id": "select-name",
+      "impact": "critical",
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "TTv5",
+        "TT5.c",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.1.1"
+      ],
+      "description": "Ensure select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/select-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<select class=\"bg-transparent text-[24px] font-medium text-right pr-2 outline-none\" name=\"sorting\" id=\"sorting\">",
+          "target": [
+            "#sorting"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark aaa\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/11/Картка_BF.jpg')\">",
+                  "target": [
+                    ".swiper-slide-active.swiper-slide > a > .aaa.course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Black Friday. Знижки до -30%</p>",
+          "target": [
+            ".swiper-slide-active.swiper-slide > a > .aaa.course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark aaa\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2025/02/modern-leadership-card.png')\">",
+                  "target": [
+                    ".swiper-slide-next.swiper-slide > a > .aaa.course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Сучасне лідерство</p>",
+          "target": [
+            ".swiper-slide-next.swiper-slide > a > .aaa.course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark aaa\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2025/02/Картка-курсу_MANAGEMENT_ESSENTIALS.png')\">",
+                  "target": [
+                    ".swiper-slide:nth-child(3) > a > .aaa.course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Management Essentials: як почати та розвиватися в ролі менеджера</p>",
+          "target": [
+            ".swiper-slide:nth-child(3) > a > .aaa.course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/07/Embedded-QA-в-IoT-та-DefTech.png')\">",
+                  "target": [
+                    "div:nth-child(1) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                    \n                                    старт 19.01\n                                    \n                                </span>",
+          "target": [
+            "div:nth-child(1) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/07/Embedded-QA-в-IoT-та-DefTech.png')\">",
+                  "target": [
+                    "div:nth-child(1) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Embedded QA в IoT та DefTech</p>",
+          "target": [
+            "div:nth-child(1) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/10/Картка_курсу_лектор-MilTech-Onboarding.png')\">",
+                  "target": [
+                    "div:nth-child(2) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                    \n                                    старт 19.01\n                                    \n                                </span>",
+          "target": [
+            "div:nth-child(2) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/10/Картка_курсу_лектор-MilTech-Onboarding.png')\">",
+                  "target": [
+                    "div:nth-child(2) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Управління проєктами в deftech</p>",
+          "target": [
+            "div:nth-child(2) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2024/11/Google-Таблиці-та-Excel-для-аналізу-даних-1.png')\">",
+                  "target": [
+                    "div:nth-child(3) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                    \n                                    старт 14.01\n                                    \n                                </span>",
+          "target": [
+            "div:nth-child(3) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2024/11/Google-Таблиці-та-Excel-для-аналізу-даних-1.png')\">",
+                  "target": [
+                    "div:nth-child(3) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Google Таблиці та Excel для аналізу даних</p>",
+          "target": [
+            "div:nth-child(3) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/01/No-code.png')\">",
+                  "target": [
+                    "div:nth-child(5) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                    \n                                    старт 03.12\n                                    \n                                </span>",
+          "target": [
+            "div:nth-child(5) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/01/No-code.png')\">",
+                  "target": [
+                    "div:nth-child(5) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Автоматизація для бізнес-процесів</p>",
+          "target": [
+            "div:nth-child(5) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/10/cml_card.png')\">",
+                  "target": [
+                    "div:nth-child(6) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                    \n                                    старт 02.12\n                                    \n                                </span>",
+          "target": [
+            "div:nth-child(6) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/10/cml_card.png')\">",
+                  "target": [
+                    "div:nth-child(6) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Управління змінами: від рішення до результату</p>",
+          "target": [
+            "div:nth-child(6) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2025/04/Картка-курсу-2.png')\">",
+                  "target": [
+                    "div:nth-child(8) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Бізнес-аналітик</p>",
+          "target": [
+            "div:nth-child(8) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2024/11/ШІ.png')\">",
+                  "target": [
+                    "div:nth-child(9) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">ШІ-практикум: поглиблений курс</p>",
+          "target": [
+            "div:nth-child(9) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2025/02/Курс-письменницької-майстерності​WRITE1012025_T1_7.png')\">",
+                  "target": [
+                    "div:nth-child(10) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Курс письменницької майстерності</p>",
+          "target": [
+            "div:nth-child(10) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2025/05/SFACLCURSCARD.png')\">",
+                  "target": [
+                    "div:nth-child(11) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Стратегії досягнення життєвих цілей</p>",
+          "target": [
+            "div:nth-child(11) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2025/05/STM_card.png')\">",
+                  "target": [
+                    "div:nth-child(13) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Системне управління командою</p>",
+          "target": [
+            "div:nth-child(13) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/05/bi101_2.png')\">",
+                  "target": [
+                    "div:nth-child(14) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Data Analytics: від даних до бізнес-рішень</p>",
+          "target": [
+            "div:nth-child(14) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark max-w-[unset] md:max-w-[223px] lg:max-w-[unset]\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2024/11/Інвестиції.png')\">",
+                  "target": [
+                    "div:nth-child(15) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Інвестиції для початківців</p>",
+          "target": [
+            "div:nth-child(15) > a > .max-w-\\[unset\\].md\\:max-w-\\[223px\\].lg\\:max-w-\\[unset\\] > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/about-us/\">Про нас</a>",
+          "target": [
+            "a[href$=\"about-us/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/corporate-learning/\">Корпоративне навчання</a>",
+          "target": [
+            "a[href$=\"corporate-learning/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/partnership/\">Співпраця</a>",
+          "target": [
+            ".lg\\:order-3.lg\\:flex-col.lg\\:flex > a[href$=\"partnership/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/refund-policy/\">Політика повернення коштів</a>",
+          "target": [
+            "a[href$=\"refund-policy/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"mailto:info@prometheus.org.ua\">info@prometheus.org.ua</a>",
+          "target": [
+            "a[href=\"mailto:info@prometheus.org.ua\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"tel:+380675687433\">+380675687433</a>",
+          "target": [
+            "a[href=\"tel:+380675687433\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/privacy-policy/\">Політика конфіденційності</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:order-3.lg\\:flex-col.lg\\:flex > .inline-block.link[href$=\"privacy-policy/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/faq/\">Допомога</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:order-3.lg\\:flex-col.lg\\:flex > .inline-block.link[href$=\"faq/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/offert/\">Договір публічної оферти</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:order-3.lg\\:flex-col.lg\\:flex > .inline-block.link[href$=\"offert/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/reports/\">Звітність</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:order-3.lg\\:flex-col.lg\\:flex > .inline-block.link[href$=\"reports/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link hidden lg:block\" href=\"https://prometheus.org.ua/\">© 2026 Prometheus</a>",
+          "target": [
+            ".lg\\:block.hidden[href$=\"prometheus.org.ua/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        }
+      ]
+    }
+  ],
+  "dom": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 214,
+        "height": 48
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Увійти",
+      "href": "https://courses.prometheus.org.ua/login",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Приєднатися",
+      "href": "https://apps.prometheus.org.ua/authn/register",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Каталог",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 84.078125,
+        "height": 21.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Всі курси",
+      "href": "/courses-catalog",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 104.25,
+        "height": 40
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Безплатні",
+      "href": "/courses-catalog?price=0",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 108.5,
+        "height": 40
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Prometheus PLUS",
+      "href": "/courses-catalog?price=1",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 173.90625,
+        "height": 40
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Всі курси",
+      "href": "/courses-catalog",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 257,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Prometheus PLUS",
+      "href": "/courses-catalog?price=1",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 150.546875,
+        "height": 21.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Пошук",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "Search",
+      "href": null,
+      "type": "search",
+      "placeholder": "Що ви хочете вивчити?",
+      "rect": {
+        "width": 278.984375,
+        "height": 42
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "submit",
+      "placeholder": null,
+      "rect": {
+        "width": 14,
+        "height": 14
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Замовити курс",
+      "href": "https://prometheus.org.ua/partnership/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 128.625,
+        "height": 21.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Кошик",
+      "href": "https://prometheus.org.ua/cart/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Увійти",
+      "href": "https://courses.prometheus.org.ua/login",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 120.03125,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Приєднатися",
+      "href": "https://apps.prometheus.org.ua/authn/register",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 179.734375,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "Search",
+      "href": null,
+      "type": "search",
+      "placeholder": "Пошук",
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "submit",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "0",
+      "href": "https://prometheus.org.ua/cart/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": "Що ви хочете вивчити?",
+      "rect": {
+        "width": 520.890625,
+        "height": 48
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "submit",
+      "placeholder": null,
+      "rect": {
+        "width": 260.4375,
+        "height": 48
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Фільтри",
+      "href": null,
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Скинути фільтри",
+      "href": "#",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 15.765625,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": null,
+      "rect": {
+        "width": 32,
+        "height": 26
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": null,
+      "rect": {
+        "width": 32,
+        "height": 26
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Black Friday. Знижки до -30%",
+      "href": "https://prometheus.org.ua/prometheus-plus/black-friday-2026",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "4500 грн\n\nСучасне лідерство\n\n9.6",
+      "href": "https://prometheus.org.ua/prometheus-plus/modern-leadership",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "3950 грн\n\nManagement Essentials: як почати та розвиватися в ролі менеджера\n\n10",
+      "href": "https://prometheus.org.ua/prometheus-plus/management-essentials",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "12900 грн\n\nТестувальник QA Auto\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/automatic-software-testing",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "14000 грн\n\nТестувальник QA Manual\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/manual-software-testing",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "4500 грн\n\nПереговори: як не погоджуватися на менше",
+      "href": "https://prometheus.org.ua/prometheus-plus/negotiations",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "12500 грн\n\nАудитор: від теорії до практики\n\n9.1",
+      "href": "https://prometheus.org.ua/prometheus-plus/auditor-plus",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "13900 грн\n\nFrontend-розробник\n\n9.7",
+      "href": "https://prometheus.org.ua/prometheus-plus/front-end",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "SELECT",
+      "text": "Сортування\nСпочатку нові\nСпочатку популярні\nВід дорогих до дешевих\nВід дешевих до дорогих",
+      "href": null,
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 339,
+        "height": 34
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 19.01\n16000 грн\n\nEmbedded QA в IoT та DefTech",
+      "href": "https://prometheus.org.ua/prometheus-plus/embedded-qa",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 19.01\n\nУправління проєктами в deftech",
+      "href": "https://prometheus.org.ua/prometheus-plus/miltech-onboarding",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 14.01\n5000 грн\n\nGoogle Таблиці та Excel для аналізу даних\n\n9.6",
+      "href": "https://prometheus.org.ua/prometheus-plus/google-sheets-and-excel",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nЕфективне управління школою в умовах фінансової автономії",
+      "href": "https://prometheus.org.ua/prometheus-free/school-financial-autonomy",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 03.12\n\nАвтоматизація для бізнес-процесів",
+      "href": "https://prometheus.org.ua/prometheus-plus/no-code",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 02.12\n\nУправління змінами: від рішення до результату",
+      "href": "https://prometheus.org.ua/prometheus-plus/upravlinnia-zminamy",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nБез барʼєрів: як адаптувати робоче середовище для ветеранів і ветеранок",
+      "href": "https://prometheus.org.ua/prometheus-free/bez-barieriv-veterany",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "12500 грн\n\nБізнес-аналітик\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/business-analyst",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "9000 грн\n\nШІ-практикум: поглиблений курс\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/ai-in-modern-communications",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "6000 грн\n\nКурс письменницької майстерності\n\n8.5",
+      "href": "https://prometheus.org.ua/prometheus-plus/writer-course",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "12000 грн\n\nСтратегії досягнення життєвих цілей",
+      "href": "https://prometheus.org.ua/prometheus-plus/strategies-for-achieving-life-goals",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nДіяльність служб у справах дітей щодо захисту прав та інтересів...",
+      "href": "https://prometheus.org.ua/prometheus-free/activities-of-child-protection-services",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Системне управління командою\n\n9.7",
+      "href": "https://prometheus.org.ua/prometheus-plus/system-team-management",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Data Analytics: від даних до бізнес-рішень\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/data-analytics-basics",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "14000 грн\n\nІнвестиції для початківців\n\n8.8",
+      "href": "https://prometheus.org.ua/prometheus-plus/investments-for-beginners-basic",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Показати ще",
+      "href": null,
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 266.671875,
+        "height": 56
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Теми",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Тип курсу",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Формат курсу",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Ціна",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Сертифікація",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Рівень навчання",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Мета навчання",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Тривалість курсу",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 1376,
+        "height": 60.796875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "",
+      "href": null,
+      "type": "text",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Застосувати фільтри",
+      "href": null,
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 1080,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Про нас",
+      "href": "/about-us/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Корпоративне навчання",
+      "href": "/corporate-learning/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Співпраця",
+      "href": "/partnership/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика повернення коштів",
+      "href": "/refund-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "info@prometheus.org.ua",
+      "href": "mailto:info@prometheus.org.ua",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 202.421875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "+380675687433",
+      "href": "tel:+380675687433",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 141.203125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://www.facebook.com/prometheusmooc",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://www.instagram.com/prometheus.ua",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://ua.linkedin.com/school/prometheus-mooc/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://www.youtube.com/channel/UCp_ZjjvKE_lScv09caE6z3A",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://itunes.apple.com/us/app/prometheus-online-courses/id1213523151",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 160,
+        "height": 49.0625
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://play.google.com/store/apps/details?id=org.prometheus.android",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 160,
+        "height": 50.125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/monobank/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 150,
+        "height": 50
+      }
+    },
+    {
+      "tag": "A",
+      "text": "© 2026 Prometheus",
+      "href": "https://prometheus.org.ua/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 168.46875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "© 2026 Prometheus",
+      "href": "https://prometheus.org.ua/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "javascript:;",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "javascript:;",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "javascript:;",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "mobileTargets": [
+    {
+      "name": "",
+      "tag": "BUTTON",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 151.578125,
+      "height": 34
+    },
+    {
+      "name": "Увійти",
+      "tag": "A",
+      "width": 175,
+      "height": 43.109375
+    },
+    {
+      "name": "Приєднатися",
+      "tag": "A",
+      "width": 175,
+      "height": 43.109375
+    },
+    {
+      "name": "Всі курси",
+      "tag": "A",
+      "width": 104.78125,
+      "height": 40
+    },
+    {
+      "name": "Безплатні",
+      "tag": "A",
+      "width": 109.265625,
+      "height": 40
+    },
+    {
+      "name": "Prometheus PLUS",
+      "tag": "A",
+      "width": 174.546875,
+      "height": 40
+    },
+    {
+      "name": "Замовити курс",
+      "tag": "A",
+      "width": 216.9375,
+      "height": 63.671875
+    },
+    {
+      "name": "",
+      "tag": "BUTTON",
+      "width": 28,
+      "height": 28
+    },
+    {
+      "name": "Search",
+      "tag": "INPUT",
+      "width": 356,
+      "height": 42
+    },
+    {
+      "name": "",
+      "tag": "BUTTON",
+      "width": 14,
+      "height": 14
+    },
+    {
+      "name": "Кошик",
+      "tag": "A",
+      "width": 36,
+      "height": 44
+    },
+    {
+      "name": "",
+      "tag": "INPUT",
+      "width": 233.328125,
+      "height": 40
+    },
+    {
+      "name": "",
+      "tag": "INPUT",
+      "width": 116.671875,
+      "height": 40
+    },
+    {
+      "name": "Фільтри",
+      "tag": "BUTTON",
+      "width": 342,
+      "height": 57
+    },
+    {
+      "name": "Black Friday. Знижки до -30%",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "4500 грн\n\nСучасне лідерство\n\n9.6",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "3950 грн\n\nManagement Essentials: як почати та розвиватися в ролі менеджера\n\n10",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "12900 грн\n\nТестувальник QA Auto\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "14000 грн\n\nТестувальник QA Manual\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "4500 грн\n\nПереговори: як не погоджуватися на менше",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "12500 грн\n\nАудитор: від теорії до практики\n\n9.1",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "13900 грн\n\nFrontend-розробник\n\n9.7",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Сортування\nСпочатку нові\nСпочатку популярні\nВід дорогих до дешевих\nВід дешевих д",
+      "tag": "SELECT",
+      "width": 339,
+      "height": 34
+    },
+    {
+      "name": "старт 19.01\n16000 грн\n\nEmbedded QA в IoT та DefTech",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 19.01\n\nУправління проєктами в deftech",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 14.01\n5000 грн\n\nGoogle Таблиці та Excel для аналізу даних\n\n9.6",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nЕфективне управління школою в умовах фінансової ",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "старт 03.12\n\nАвтоматизація для бізнес-процесів",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 02.12\n\nУправління змінами: від рішення до результату",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nБез барʼєрів: як адаптувати робоче середовище дл",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "12500 грн\n\nБізнес-аналітик\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "9000 грн\n\nШІ-практикум: поглиблений курс\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "6000 грн\n\nКурс письменницької майстерності\n\n8.5",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "12000 грн\n\nСтратегії досягнення життєвих цілей",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nДіяльність служб у справах дітей щодо захисту пр",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Системне управління командою\n\n9.7",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Data Analytics: від даних до бізнес-рішень\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "14000 грн\n\nІнвестиції для початківців\n\n8.8",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Показати ще",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 56
+    },
+    {
+      "name": "Теми",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Тип курсу",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Формат курсу",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Ціна",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Сертифікація",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Рівень навчання",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Мета навчання",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Тривалість курсу",
+      "tag": "BUTTON",
+      "width": 326,
+      "height": 60.796875
+    },
+    {
+      "name": "Застосувати фільтри",
+      "tag": "BUTTON",
+      "width": 292.5,
+      "height": 56
+    },
+    {
+      "name": "Про нас",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "Корпоративне навчання",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "Співпраця",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "Політика повернення коштів",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "info@prometheus.org.ua",
+      "tag": "A",
+      "width": 202.421875,
+      "height": 24
+    },
+    {
+      "name": "+380675687433",
+      "tag": "A",
+      "width": 141.203125,
+      "height": 24
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 160,
+      "height": 50.125
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 160,
+      "height": 50.125
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 160,
+      "height": 50
+    },
+    {
+      "name": "Політика конфіденційності",
+      "tag": "A",
+      "width": 200.875,
+      "height": 14
+    },
+    {
+      "name": "Допомога",
+      "tag": "A",
+      "width": 73.265625,
+      "height": 14
+    },
+    {
+      "name": "Договір публічної оферти",
+      "tag": "A",
+      "width": 190.78125,
+      "height": 14
+    },
+    {
+      "name": "Звітність",
+      "tag": "A",
+      "width": 66.453125,
+      "height": 14
+    },
+    {
+      "name": "© 2026 Prometheus",
+      "tag": "A",
+      "width": 358,
+      "height": 14
+    }
+  ]
+}

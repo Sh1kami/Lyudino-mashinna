@@ -1,0 +1,181 @@
+[
+  {
+    "version": "v1",
+    "focus": [
+      {
+        "tag": "INPUT",
+        "id": "name",
+        "text": "Назва навчального запису",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "Час нагадування",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "Час нагадування",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "Час нагадування",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "SELECT",
+        "id": "repeat",
+        "text": "Щодня",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Зберегти нагадування",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Скасувати",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "text": "Сьогодні",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "text": "Профіль",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "BODY",
+        "id": "",
+        "text": "Нове нагадування\n\nВведіть назву та зручний час.\n\nВикористовуйте вигадану назву, ",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "name",
+        "text": "Назва навчального запису",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "Час нагадування",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      }
+    ]
+  },
+  {
+    "version": "v2",
+    "focus": [
+      {
+        "tag": "A",
+        "id": "",
+        "text": "До основного вмісту",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "text": "MedTime",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "text": "Профіль",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "name",
+        "text": "",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "INPUT",
+        "id": "time",
+        "text": "",
+        "outlineStyle": "none",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "SELECT",
+        "id": "repeat",
+        "text": "Щодня",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Зберегти нагадування",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "text": "Скасувати",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "text": "Сьогодні",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "text": "Профіль",
+        "outlineStyle": "solid",
+        "outlineWidth": "3px"
+      }
+    ],
+    "textSpacingOverflow": false
+  }
+]

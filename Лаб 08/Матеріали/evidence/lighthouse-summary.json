@@ -1,0 +1,30 @@
+[
+  {
+    "version": "v1",
+    "screen": "today",
+    "score": 0.9,
+    "lighthouseVersion": "13.6.0",
+    "fetchTime": "2026-11-19T17:03:46.152Z"
+  },
+  {
+    "version": "v1",
+    "screen": "add",
+    "score": 0.83,
+    "lighthouseVersion": "13.6.0",
+    "fetchTime": "2026-11-19T17:03:57.056Z"
+  },
+  {
+    "version": "v2",
+    "screen": "today",
+    "score": 1,
+    "lighthouseVersion": "13.6.0",
+    "fetchTime": "2026-11-19T17:04:07.714Z"
+  },
+  {
+    "version": "v2",
+    "screen": "add",
+    "score": 1,
+    "lighthouseVersion": "13.6.0",
+    "fetchTime": "2026-11-19T17:04:18.338Z"
+  }
+]

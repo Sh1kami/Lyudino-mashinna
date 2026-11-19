@@ -1,0 +1,4144 @@
+{
+  "name": "home",
+  "url": "https://prometheus.org.ua/",
+  "timestamp": "2026-11-19T17:08:55.248Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.14.1"
+  },
+  "violations": [
+    {
+      "id": "button-name",
+      "impact": "critical",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-11.9.1"
+      ],
+      "description": "Ensure buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/button-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "button-has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have inner text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element has no title attribute"
+            },
+            {
+              "id": "implicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an implicit (wrapped) <label>"
+            },
+            {
+              "id": "explicit-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element does not have an explicit <label>"
+            },
+            {
+              "id": "presentational-role",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "critical",
+          "html": "<button type=\"submit\" class=\"absolute left-7 top-1/2 -translate-y-1/2 transform lg:left-3\">",
+          "target": [
+            ".lg\\:left-3"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e67d2d",
+                "contrastRatio": 2.86,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"register-button btn-sm btn-primary px-8 md:max-w-[300px] hidden\" href=\"https://apps.prometheus.org.ua/authn/register\">Приєднатися</a>",
+                  "target": [
+                    ".register-button"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"register-button btn-sm btn-primary px-8 md:max-w-[300px] hidden\" href=\"https://apps.prometheus.org.ua/authn/register\">Приєднатися</a>",
+          "target": [
+            ".register-button"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e67d2d",
+                "contrastRatio": 2.86,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"https://prometheus.org.ua/partnership/\" class=\"btn btn-primary hidden w-fit lg:flex\">Створити курс з нами</a>",
+                  "target": [
+                    ".btn-primary.btn.lg\\:flex"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://prometheus.org.ua/partnership/\" class=\"btn btn-primary hidden w-fit lg:flex\">Створити курс з нами</a>",
+          "target": [
+            ".btn-primary.btn.lg\\:flex"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e67d2d",
+                "contrastRatio": 2.86,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"tab active\" href=\"#d0b1d196d0b7d0bdd0b5d181-d0b0d0bdd0b0d0bbd196d182d0b8d0ba\">Бізнес-аналітик</a>",
+                  "target": [
+                    ".active"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"tab active\" href=\"#d0b1d196d0b7d0bdd0b5d181-d0b0d0bdd0b0d0bbd196d182d0b8d0ba\">Бізнес-аналітик</a>",
+          "target": [
+            ".active"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e67d2d",
+                "contrastRatio": 2.86,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a href=\"https://prometheus.org.ua/prometheus-free/path-to-work-in-the-eu/\" target=\"_blank\" class=\"btn btn-primary w-fit\">Дізнатися більше</a>",
+                  "target": [
+                    ".swiper-slide-active.swiper-slide > .py-\\[32px\\].w-\\[19\\.125rem\\].gap-\\[32px\\] > .lg\\:grid-cols-2.grid-cols-1.grid > .gap-8.justify-between.flex-col > .btn-primary.btn[target=\"_blank\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"https://prometheus.org.ua/prometheus-free/path-to-work-in-the-eu/\" target=\"_blank\" class=\"btn btn-primary w-fit\">Дізнатися більше</a>",
+          "target": [
+            ".swiper-slide-active.swiper-slide > .py-\\[32px\\].w-\\[19\\.125rem\\].gap-\\[32px\\] > .lg\\:grid-cols-2.grid-cols-1.grid > .gap-8.justify-between.flex-col > .btn-primary.btn[target=\"_blank\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#e67d2d",
+                "contrastRatio": 2.86,
+                "fontSize": "24.0pt (32px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"absolute bottom-0 left-[96px] flex min-h-[170px] w-[160px] items-end justify-center rounded-[32px] bg-mainOrange px-6 py-5 md:min-h-[262px] md:w-[246px]\">",
+                  "target": [
+                    ".left-\\[96px\\]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-center font-mursGothic uppercase leading-none tracking-wide text-neutral-100 md:text-[2rem]\" style=\"font-size: 1.125rem;\">\n                            Знання - це світло                        </p>",
+          "target": [
+            ".tracking-wide"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #ffffff, background color: #e67d2d, font size: 24.0pt (32px), font weight: normal). Expected contrast ratio of 3:1"
+        }
+      ]
+    },
+    {
+      "id": "link-name",
+      "impact": "serious",
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag244",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT6.a",
+        "EN-301-549",
+        "EN-9.2.4.4",
+        "EN-9.4.1.2",
+        "ACT",
+        "RGAAv4",
+        "RGAA-6.2.1"
+      ],
+      "description": "Ensure links have discernible text",
+      "help": "Links must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-name?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/\">\n                                </a>",
+          "target": [
+            ".swiper-wrapper > .gap-4.flex-col:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/\">\n                                    </a>",
+          "target": [
+            "#post-206642 > .gap-4.flex-col:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/\">\n                                </a>",
+          "target": [
+            ".swiper-wrapper > .gap-4.flex-col:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/\">\n                                    </a>",
+          "target": [
+            "#post-205350 > .gap-4.flex-col:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/autumn-online-magazine-2026/\">\n                                </a>",
+          "target": [
+            ".gap-4.flex-col:nth-child(5)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/autumn-online-magazine-2026/\">\n                                    </a>",
+          "target": [
+            "#post-205858 > .gap-4.flex-col:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/\">\n                                </a>",
+          "target": [
+            ".gap-4.flex-col:nth-child(7)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/\">\n                                    </a>",
+          "target": [
+            "#post-205091 > .gap-4.flex-col:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/summer-online-magazine-2026/\">\n                                </a>",
+          "target": [
+            ".gap-4.flex-col:nth-child(9)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a class=\"flex flex-col gap-4\" href=\"https://prometheus.org.ua/blog/summer-online-magazine-2026/\">\n                                    </a>",
+          "target": [
+            "#post-200786 > .gap-4.flex-col:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.facebook.com/prometheusmooc\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(1)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.instagram.com/prometheus.ua\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(2)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://ua.linkedin.com/school/prometheus-mooc/\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(3)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element does not have text that is visible to screen readers"
+            },
+            {
+              "id": "aria-label",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute does not exist or is empty"
+            },
+            {
+              "id": "aria-labelledby",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+            },
+            {
+              "id": "non-empty-title",
+              "data": {
+                "messageKey": "noAttr"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has no title attribute"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is in tab order and does not have accessible text"
+            }
+          ],
+          "impact": "serious",
+          "html": "<a href=\"https://www.youtube.com/channel/UCp_ZjjvKE_lScv09caE6z3A\" class=\"link-social\">",
+          "target": [
+            ".link-social:nth-child(4)"
+          ],
+          "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "impact": "serious",
+      "tags": [
+        "cat.structure",
+        "wcag2a",
+        "wcag131",
+        "EN-301-549",
+        "EN-9.1.3.1",
+        "RGAAv4",
+        "RGAA-9.3.1"
+      ],
+      "description": "Ensure that lists are structured correctly",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/list?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "only-listitems",
+              "data": {
+                "values": "h3"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<h3 class=\"mb-8 pl-3 text-[1.5rem] font-medium text-neutral-1000 xl:mb-6\">Курси</h3>",
+                  "target": [
+                    ".pl-3"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "List element has direct children that are not allowed: h3"
+            }
+          ],
+          "impact": "serious",
+          "html": "<ul>",
+          "target": [
+            ".overflow-y-auto.gap-8.flex-col > ul"
+          ],
+          "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: h3"
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus career dark\" style=\"background-image: url(https://prometheus.org.ua/wp-content/uploads/2024/09/Курс_Професія_БА.jpg)\">",
+                  "target": [
+                    ".swiper-slide-active.swiper-slide > a > .career.course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Бізнес-аналітик</p>",
+          "target": [
+            ".swiper-slide-active.swiper-slide > a > .career.course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/07/Embedded-QA-в-IoT-та-DefTech.png')\">",
+                  "target": [
+                    ".swiper-slide-active.swiper-slide[data-swiper-slide-index=\"0\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                                                                                                            старт 19.01                                                                                                                    </span>",
+          "target": [
+            ".swiper-slide-active.swiper-slide[data-swiper-slide-index=\"0\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/07/Embedded-QA-в-IoT-та-DefTech.png')\">",
+                  "target": [
+                    ".swiper-slide-active.swiper-slide[data-swiper-slide-index=\"0\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Embedded QA в IoT та DefTech</p>",
+          "target": [
+            ".swiper-slide-active.swiper-slide[data-swiper-slide-index=\"0\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/10/Картка_курсу_лектор-MilTech-Onboarding.png')\">",
+                  "target": [
+                    ".swiper-slide-next.swiper-slide[data-swiper-slide-index=\"1\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                                                                                                            старт 19.01                                                                                                                    </span>",
+          "target": [
+            ".swiper-slide-next.swiper-slide[data-swiper-slide-index=\"1\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/10/Картка_курсу_лектор-MilTech-Onboarding.png')\">",
+                  "target": [
+                    ".swiper-slide-next.swiper-slide[data-swiper-slide-index=\"1\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Управління проєктами в deftech</p>",
+          "target": [
+            ".swiper-slide-next.swiper-slide[data-swiper-slide-index=\"1\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2024/11/Google-Таблиці-та-Excel-для-аналізу-даних-1.png')\">",
+                  "target": [
+                    ".swiper-slide[data-swiper-slide-index=\"2\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                                                                                                            старт 14.01                                                                                                                    </span>",
+          "target": [
+            ".swiper-slide[data-swiper-slide-index=\"2\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2024/11/Google-Таблиці-та-Excel-для-аналізу-даних-1.png')\">",
+                  "target": [
+                    ".swiper-slide[data-swiper-slide-index=\"2\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Google Таблиці та Excel для аналізу даних</p>",
+          "target": [
+            ".swiper-slide[data-swiper-slide-index=\"2\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.8pt (13.008px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/01/No-code.png')\">",
+                  "target": [
+                    ".swiper-slide[data-swiper-slide-index=\"3\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"course-card-plus__start\">\n                                                                                                                            старт 03.12                                                                                                                    </span>",
+          "target": [
+            ".swiper-slide[data-swiper-slide-index=\"3\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__info > .course-card-plus__start"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<article class=\"course-card-plus dark\" style=\"background-image: url('https://prometheus.org.ua/wp-content/uploads/2026/01/No-code.png')\">",
+                  "target": [
+                    ".swiper-slide[data-swiper-slide-index=\"3\"] > a > .course-card-plus.dark"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"course-card-plus__title\">Автоматизація для бізнес-процесів</p>",
+          "target": [
+            ".swiper-slide[data-swiper-slide-index=\"3\"] > a > .course-card-plus.dark > .course-card-plus__header > .course-card-plus__title"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"text-[.875rem]\">випускник  стипендійної ІТ програми</p>",
+          "target": [
+            ".swiper-slide:nth-child(3) > .w-\\[305px\\].rounded-lg.md\\:h-\\[360px\\] > .md\\:mb-\\[\\.625rem\\].mb-6 > .gap-2.flex-col.flex > .text-\\[\\.875rem\\]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/about-us/\">Про нас</a>",
+          "target": [
+            "a[href$=\"about-us/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/corporate-learning/\">Корпоративне навчання</a>",
+          "target": [
+            ".lg\\:flex-col.lg\\:order-3.gap-6 > a[href$=\"corporate-learning/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/partnership/\">Співпраця</a>",
+          "target": [
+            ".lg\\:flex-col.lg\\:order-3.gap-6 > a[href$=\"partnership/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"/refund-policy/\">Політика повернення коштів</a>",
+          "target": [
+            "a[href$=\"refund-policy/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"mailto:info@prometheus.org.ua\">info@prometheus.org.ua</a>",
+          "target": [
+            "a[href=\"mailto:info@prometheus.org.ua\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link\" href=\"tel:+380675687433\">+380675687433</a>",
+          "target": [
+            "a[href=\"tel:+380675687433\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/privacy-policy/\">Політика конфіденційності</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:flex-col.lg\\:order-3.lg\\:flex > .inline-block.link[href$=\"privacy-policy/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/faq/\">Допомога</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:flex-col.lg\\:order-3.lg\\:flex > .inline-block.link[href$=\"faq/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/offert/\">Договір публічної оферти</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:flex-col.lg\\:order-3.lg\\:flex > .inline-block.link[href$=\"offert/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link inline-block\" href=\"/reports/\">Звітність</a>",
+          "target": [
+            ".lg\\:gap-6 > .textwidget > .lg\\:flex-col.lg\\:order-3.lg\\:flex > .inline-block.link[href$=\"reports/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "pseudoContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<footer id=\"site-footer\" class=\"footer inset-x-0 bottom-0 z-0 bg-neutral-1000 pb-10 pt-[3.125rem] text-white\">",
+                  "target": [
+                    "#site-footer"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"link hidden lg:block\" href=\"https://prometheus.org.ua/\">© 2026 Prometheus</a>",
+          "target": [
+            ".lg\\:block.link[href$=\"prometheus.org.ua/\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+        }
+      ]
+    },
+    {
+      "id": "video-caption",
+      "impact": "critical",
+      "tags": [
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag122",
+        "section508",
+        "section508.22.a",
+        "TTv5",
+        "TT17.a",
+        "EN-301-549",
+        "EN-9.1.2.2",
+        "RGAAv4",
+        "RGAA-4.3.1"
+      ],
+      "description": "Ensure <video> elements have captions",
+      "help": "<video> elements must have captions",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/video-caption?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "caption",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "critical",
+              "message": "Check that captions are available for the element"
+            }
+          ],
+          "impact": "critical",
+          "html": "<video autoplay=\"autoplay\" muted=\"muted\" loop=\"loop\" playsinline=\"true\" disablepictureinpicture=\"true\" preload=\"auto\" class=\"object-cover\">",
+          "target": [
+            "video"
+          ],
+          "failureSummary": "Fix all of the following:\n  Check that captions are available for the element"
+        }
+      ]
+    }
+  ],
+  "dom": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 214,
+        "height": 48
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Увійти",
+      "href": "https://courses.prometheus.org.ua/login",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Приєднатися",
+      "href": "https://apps.prometheus.org.ua/authn/register",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Каталог",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 84.078125,
+        "height": 21.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Всі курси",
+      "href": "/courses-catalog",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 104.25,
+        "height": 40
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Безплатні",
+      "href": "/courses-catalog?price=0",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 108.5,
+        "height": 40
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Prometheus PLUS",
+      "href": "/courses-catalog?price=1",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 173.90625,
+        "height": 40
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Всі курси",
+      "href": "/courses-catalog",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 257,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Prometheus PLUS",
+      "href": "/courses-catalog?price=1",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 150.546875,
+        "height": 21.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Пошук",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "Search",
+      "href": null,
+      "type": "search",
+      "placeholder": "Що ви хочете вивчити?",
+      "rect": {
+        "width": 278.984375,
+        "height": 42
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "submit",
+      "placeholder": null,
+      "rect": {
+        "width": 14,
+        "height": 14
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Замовити курс",
+      "href": "https://prometheus.org.ua/partnership/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 128.625,
+        "height": 21.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Кошик",
+      "href": "https://prometheus.org.ua/cart/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 44,
+        "height": 44
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Увійти",
+      "href": "https://courses.prometheus.org.ua/login",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 120.03125,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Приєднатися",
+      "href": "https://apps.prometheus.org.ua/authn/register",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 179.734375,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "INPUT",
+      "text": "Search",
+      "href": null,
+      "type": "search",
+      "placeholder": "Пошук",
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "submit",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "0",
+      "href": "https://prometheus.org.ua/cart/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://cutt.ly/AeMuGZUR",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://cutt.ly/AeMuGZUR",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Приєднатися",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 225.734375,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Створити курс з нами",
+      "href": "https://prometheus.org.ua/partnership/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 255.609375,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Створити курс з нами",
+      "href": "/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Бізнес-аналітик",
+      "href": "#d0b1d196d0b7d0bdd0b5d181-d0b0d0bdd0b0d0bbd196d182d0b8d0ba",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 186.96875,
+        "height": 45
+      }
+    },
+    {
+      "tag": "A",
+      "text": "QA Auto",
+      "href": "#qa-auto",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 115.6875,
+        "height": 45
+      }
+    },
+    {
+      "tag": "A",
+      "text": "C++ Developer",
+      "href": "#c-developer",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 171.171875,
+        "height": 45
+      }
+    },
+    {
+      "tag": "A",
+      "text": "DevOps Engineer",
+      "href": "#devops-engineer",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 188.71875,
+        "height": 45
+      }
+    },
+    {
+      "tag": "A",
+      "text": "HR-manager",
+      "href": "#hr-manager",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 152.453125,
+        "height": 45
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Бізнес-аналітик",
+      "href": "https://prometheus.org.ua/prometheus-plus/business-analyst/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступ постійно\nБезплатно\n\nВетеранське коло",
+      "href": "https://prometheus.org.ua/prometheus-plus/veteran-circle/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "дата старту 01.2025\n                                                                                                                    \n                                           ",
+      "href": "https://prometheus.org.ua/prometheus-plus/automatic-software-testing/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступ постійно\n                                                            Безплатно\n                                                        \n                                     ",
+      "href": "https://prometheus.org.ua/course/course-v1:LITS+115+2017_T4",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "дата старту 03.2025\n                                                                                                                    \n                                           ",
+      "href": "https://prometheus.org.ua/prometheus-plus/programming-c/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступ постійно\n                                                            Безплатно\n                                                        \n                                     ",
+      "href": "https://prometheus.org.ua/course/course-v1:Prometheus+CS50S101+2023_T1",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дата старту 02.2025\n                                                                                                                    \n                                           ",
+      "href": "https://prometheus.org.ua/prometheus-plus/devops_and_kubernetes/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступ постійно\n                                                            Безплатно\n                                                        \n                                     ",
+      "href": "https://prometheus.org.ua/course/course-v1:LinuxFoundation+INTRO101+2023_T1",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дата старту: 03.2025\n                                                                                                                    \n                                          ",
+      "href": "https://prometheus.org.ua/prometheus-plus/hr-up/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Безплатно\n                                                        \n                                                        Ветеранське коло",
+      "href": "https://prometheus.org.ua/prometheus-plus/veteran-circle/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/courses-catalog/prometheus-plus",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 364,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 19.01\n16000 грн\n\nEmbedded QA в IoT та DefTech",
+      "href": "https://prometheus.org.ua/prometheus-plus/embedded-qa",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 19.01\n\nУправління проєктами в deftech",
+      "href": "https://prometheus.org.ua/prometheus-plus/miltech-onboarding",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 14.01\n5000 грн\n\nGoogle Таблиці та Excel для аналізу даних\n\n9.6",
+      "href": "https://prometheus.org.ua/prometheus-plus/google-sheets-and-excel",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 03.12\n\nАвтоматизація для бізнес-процесів",
+      "href": "https://prometheus.org.ua/prometheus-plus/no-code",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "старт 02.12\n\nУправління змінами: від рішення до результату",
+      "href": "https://prometheus.org.ua/prometheus-plus/upravlinnia-zminamy",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "12500 грн\n\nБізнес-аналітик\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/business-analyst",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "6000 грн\n\nКурс письменницької майстерності\n\n8.5",
+      "href": "https://prometheus.org.ua/prometheus-plus/writer-course",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "9000 грн\n\nШІ-практикум: поглиблений курс\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/ai-in-modern-communications",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "12000 грн\n\nСтратегії досягнення життєвих цілей",
+      "href": "https://prometheus.org.ua/prometheus-plus/strategies-for-achieving-life-goals",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Системне управління командою\n\n9.7",
+      "href": "https://prometheus.org.ua/prometheus-plus/system-team-management",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Data Analytics: від даних до бізнес-рішень\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/data-analytics-basics",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "14000 грн\n\nІнвестиції для початківців\n\n8.8",
+      "href": "https://prometheus.org.ua/prometheus-plus/investments-for-beginners-basic",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "CyberSecurity. Практичний захист\n\n9.4",
+      "href": "https://prometheus.org.ua/prometheus-plus/cybersecurity",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Data Analytics Pro",
+      "href": "https://prometheus.org.ua/prometheus-plus/data-analytics-pro-solution-design",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "17000 грн\n\nЮридичний супровід інвестицій у Defense Tech",
+      "href": "https://prometheus.org.ua/prometheus-plus/defense-tech-investments",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Переглянути відео",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 326,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Переглянути відео",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 326,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Переглянути відео",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 326,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Переглянути відео",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 326,
+        "height": 43.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/prometheus-free/path-to-work-in-the-eu/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Показати більше\n                                            Приховати",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/prometheus-plus/career-counseling-for-veterans/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Показати більше\n                                            Приховати",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/prometheus-plus/veteran-circle/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Показати більше\n                                            Приховати",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/prometheus-free/ukrainian-digital-bootcamp/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Показати більше\n                                            Приховати",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/prometheus-plus/worldwide-university",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Показати більше\n                                            Приховати",
+      "href": null,
+      "type": "button",
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дивитися всі",
+      "href": "/courses-catalog",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 161.796875,
+        "height": 47.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nОснови програмування CS50",
+      "href": "https://prometheus.org.ua/prometheus-plus/osnovy-programuvannya-cs50-2019",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nАнглійська для початківців. Elementary level (A1-A2)",
+      "href": "https://prometheus.org.ua/prometheus-plus/english-for-beginners",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nПерша домедична допомога в умовах війни\n\n9.5",
+      "href": "https://prometheus.org.ua/prometheus-plus/first-aid-during-war",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nПочаток роботи з ChatGPT\n\n8.8",
+      "href": "https://prometheus.org.ua/prometheus-plus/intro-to-chatgpt",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nЯк почати власну справу в часи невизначеності: покроковий гайд від ТОП-підприємців України\n\n8.8",
+      "href": "https://prometheus.org.ua/prometheus-plus/start-business-in-uncertain-times",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nОснови Web UI розробки 2023\n\n8.9",
+      "href": "https://prometheus.org.ua/prometheus-plus/web-ui-development-basics",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nПерша психологічна допомога\n\n9.2",
+      "href": "https://prometheus.org.ua/prometheus-plus/first-psychological-aid",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nІнженер БПЛА. Базовий курс\n\n8.8",
+      "href": "https://prometheus.org.ua/prometheus-plus/drone-engineering-intro",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nНебайдужі: базові емоційні потреби та соціальна взаємодія\n\n9.4",
+      "href": "https://prometheus.org.ua/prometheus-plus/emotional-needs-and-social-interaction",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nБаза: Сучасна військова підготовка\n\n9.3",
+      "href": "https://prometheus.org.ua/prometheus-plus/basic-modern-military-training",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nSMM: фундамент\n\n9",
+      "href": "https://prometheus.org.ua/prometheus-plus/smm-foundation",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Доступний постійно\nБезкоштовно\n\nНавчаймось вчитись: Потужні розумові інструменти для опанування складних предметів",
+      "href": "https://prometheus.org.ua/prometheus-plus/how-to-learn",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 260,
+        "height": 380
+      }
+    },
+    {
+      "tag": "A",
+      "text": "IT",
+      "href": "https://prometheus.org.ua/courses-catalog/it",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 79.578125,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "AI та робота з даними",
+      "href": "https://prometheus.org.ua/courses-catalog/ai-and-data",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 253.40625,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Англійська мова",
+      "href": "https://prometheus.org.ua/courses-catalog/english",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 203.828125,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Бізнес",
+      "href": "https://prometheus.org.ua/courses-catalog/business",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 119.5625,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Для освітян",
+      "href": "https://prometheus.org.ua/courses-catalog/teachers-courses",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 165.953125,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Військова служба",
+      "href": "https://prometheus.org.ua/courses-catalog/military-service",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 217.21875,
+        "height": 56
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/partnership/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дізнатися більше",
+      "href": "https://prometheus.org.ua/corporate-learning/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 215.875,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Дивитися всі",
+      "href": "/blog",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 161.796875,
+        "height": 47.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 460.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Блог\nЛюди Prometheus. Історії наших слухачів. Уляна Рубцова\n\nPrometheus — це не лише курси. Це передусім люди, що наважуються зробити наступний крок. За кожною програмою стоять наш",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 357.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "29 Жовтня 2026",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 164.9375,
+        "height": 20
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Читати",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-uliana-rubtsova/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 84.34375,
+        "height": 37
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 460.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Блог\nЛюди Prometheus. Історії наших слухачів. Олександр Мірошниченко\n\nPrometheus — це не лише курси. Це передусім люди, що наважуються зробити наступний крок. За кожною програмою с",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 357.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "20 Жовтня 2026",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 165.1875,
+        "height": 20
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Читати",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksandr-miroshnychenko/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 84.34375,
+        "height": 37
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/autumn-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 460.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/autumn-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Блог\nОсінній онлайн-журнал\n\n🍂 Усередині — корисні матеріали, практичні поради, досвід експертів та ідеї, до яких можна повертатися тоді, коли матимете сили й…",
+      "href": "https://prometheus.org.ua/blog/autumn-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 307.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "14 Жовтня 2026",
+      "href": "https://prometheus.org.ua/blog/autumn-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 159.65625,
+        "height": 20
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Читати",
+      "href": "https://prometheus.org.ua/blog/autumn-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 84.34375,
+        "height": 37
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 460.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Блог\nЛюди Prometheus. Історії наших слухачів. Олексій Каменцев\n\nPrometheus — це не лише курси. Це передусім люди, що наважуються зробити наступний крок. За кожною програмою стоять ",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 357.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "05 Жовтня 2026",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 165.4375,
+        "height": 20
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Читати",
+      "href": "https://prometheus.org.ua/blog/the-people-of-prometheus-stories-of-our-learners-oleksii-kamentsev/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 84.34375,
+        "height": 37
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/summer-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 460.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/blog/summer-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Блог\nЛітній онлайн-журнал\n\n🍦 Усередині — практичні поради, досвід експертів та інструменти, які можуть стати в пригоді і зараз, і згодом Хороші ідеї…",
+      "href": "https://prometheus.org.ua/blog/summer-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 296,
+        "height": 307.328125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "15 Липня 2026",
+      "href": "https://prometheus.org.ua/blog/summer-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 147.546875,
+        "height": 20
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Читати",
+      "href": "https://prometheus.org.ua/blog/summer-online-magazine-2026/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 84.34375,
+        "height": 37
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Приєднатися",
+      "href": "https://apps.prometheus.org.ua/authn/register?next=%2Fdashboard%3F_gl%3D1%2Abwwytg%2A_gcl_au%2AMjY5MjE2MjI3LjE3Mjk0OTI2MTkuMTc1NjM0NjMxMi4xNzI5ODM3ODQ1LjE3Mjk4Mzc5NDc.%2A_ga%2AMTY0ODg0NTE5OC4xNzIxNjQyODI3%2A_ga_62JY148LQZ%2AMTczMDEwMzg4Mi4zMjIuMS4xNzMwMTEzNDIzLjcuMC4w",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 179.734375,
+        "height": 55.109375
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Про нас",
+      "href": "/about-us/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Корпоративне навчання",
+      "href": "/corporate-learning/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Співпраця",
+      "href": "/partnership/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика повернення коштів",
+      "href": "/refund-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 242.71875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "info@prometheus.org.ua",
+      "href": "mailto:info@prometheus.org.ua",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 202.421875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "+380675687433",
+      "href": "tel:+380675687433",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 141.203125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://www.facebook.com/prometheusmooc",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://www.instagram.com/prometheus.ua",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://ua.linkedin.com/school/prometheus-mooc/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://www.youtube.com/channel/UCp_ZjjvKE_lScv09caE6z3A",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 38,
+        "height": 38
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 229.578125,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://itunes.apple.com/us/app/prometheus-online-courses/id1213523151",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 160,
+        "height": 49.0625
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://play.google.com/store/apps/details?id=org.prometheus.android",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 160,
+        "height": 50.125
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "https://prometheus.org.ua/monobank/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 150,
+        "height": 50
+      }
+    },
+    {
+      "tag": "A",
+      "text": "© 2026 Prometheus",
+      "href": "https://prometheus.org.ua/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 168.46875,
+        "height": 24
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Політика конфіденційності",
+      "href": "/privacy-policy/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Допомога",
+      "href": "/faq/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Договір публічної оферти",
+      "href": "/offert/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "Звітність",
+      "href": "/reports/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "© 2026 Prometheus",
+      "href": "https://prometheus.org.ua/",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "javascript:;",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "javascript:;",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "tag": "A",
+      "text": "",
+      "href": "javascript:;",
+      "type": null,
+      "placeholder": null,
+      "rect": {
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "mobileTargets": [
+    {
+      "name": "",
+      "tag": "BUTTON",
+      "width": 24,
+      "height": 16
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 151.578125,
+      "height": 34
+    },
+    {
+      "name": "Увійти",
+      "tag": "A",
+      "width": 175,
+      "height": 43.109375
+    },
+    {
+      "name": "Приєднатися",
+      "tag": "A",
+      "width": 175,
+      "height": 43.109375
+    },
+    {
+      "name": "Всі курси",
+      "tag": "A",
+      "width": 104.78125,
+      "height": 40
+    },
+    {
+      "name": "Безплатні",
+      "tag": "A",
+      "width": 109.265625,
+      "height": 40
+    },
+    {
+      "name": "Prometheus PLUS",
+      "tag": "A",
+      "width": 174.546875,
+      "height": 40
+    },
+    {
+      "name": "Замовити курс",
+      "tag": "A",
+      "width": 216.9375,
+      "height": 63.671875
+    },
+    {
+      "name": "",
+      "tag": "BUTTON",
+      "width": 28,
+      "height": 28
+    },
+    {
+      "name": "Search",
+      "tag": "INPUT",
+      "width": 356,
+      "height": 42
+    },
+    {
+      "name": "",
+      "tag": "BUTTON",
+      "width": 14,
+      "height": 14
+    },
+    {
+      "name": "Кошик",
+      "tag": "A",
+      "width": 36,
+      "height": 44
+    },
+    {
+      "name": "Приєднатися",
+      "tag": "BUTTON",
+      "width": 358,
+      "height": 55.109375
+    },
+    {
+      "name": "Бізнес-аналітик",
+      "tag": "A",
+      "width": 186.96875,
+      "height": 45
+    },
+    {
+      "name": "QA Auto",
+      "tag": "A",
+      "width": 115.6875,
+      "height": 45
+    },
+    {
+      "name": "C++ Developer",
+      "tag": "A",
+      "width": 171.171875,
+      "height": 45
+    },
+    {
+      "name": "DevOps Engineer",
+      "tag": "A",
+      "width": 188.71875,
+      "height": 45
+    },
+    {
+      "name": "HR-manager",
+      "tag": "A",
+      "width": 152.453125,
+      "height": 45
+    },
+    {
+      "name": "Бізнес-аналітик",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Доступ постійно\nБезплатно\n\nВетеранське коло",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 215.875,
+      "height": 55.109375
+    },
+    {
+      "name": "старт 19.01\n16000 грн\n\nEmbedded QA в IoT та DefTech",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 19.01\n\nУправління проєктами в deftech",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 14.01\n5000 грн\n\nGoogle Таблиці та Excel для аналізу даних\n\n9.6",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 03.12\n\nАвтоматизація для бізнес-процесів",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "старт 02.12\n\nУправління змінами: від рішення до результату",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "12500 грн\n\nБізнес-аналітик\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "6000 грн\n\nКурс письменницької майстерності\n\n8.5",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "9000 грн\n\nШІ-практикум: поглиблений курс\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "12000 грн\n\nСтратегії досягнення життєвих цілей",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Системне управління командою\n\n9.7",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Data Analytics: від даних до бізнес-рішень\n\n9",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "14000 грн\n\nІнвестиції для початківців\n\n8.8",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "CyberSecurity. Практичний захист\n\n9.4",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Data Analytics Pro",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "17000 грн\n\nЮридичний супровід інвестицій у Defense Tech",
+      "tag": "A",
+      "width": 223,
+      "height": 322
+    },
+    {
+      "name": "Переглянути відео",
+      "tag": "BUTTON",
+      "width": 257,
+      "height": 43.109375
+    },
+    {
+      "name": "Переглянути відео",
+      "tag": "BUTTON",
+      "width": 257,
+      "height": 43.109375
+    },
+    {
+      "name": "Переглянути відео",
+      "tag": "BUTTON",
+      "width": 257,
+      "height": 43.109375
+    },
+    {
+      "name": "Переглянути відео",
+      "tag": "BUTTON",
+      "width": 257,
+      "height": 43.109375
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 215.875,
+      "height": 55.109375
+    },
+    {
+      "name": "Показати більше",
+      "tag": "BUTTON",
+      "width": 192.140625,
+      "height": 48
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 215.875,
+      "height": 55.109375
+    },
+    {
+      "name": "Показати більше",
+      "tag": "BUTTON",
+      "width": 192.140625,
+      "height": 48
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 215.875,
+      "height": 55.109375
+    },
+    {
+      "name": "Показати більше",
+      "tag": "BUTTON",
+      "width": 192.140625,
+      "height": 48
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 215.875,
+      "height": 55.109375
+    },
+    {
+      "name": "Показати більше",
+      "tag": "BUTTON",
+      "width": 192.140625,
+      "height": 48
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 215.875,
+      "height": 55.109375
+    },
+    {
+      "name": "Показати більше",
+      "tag": "BUTTON",
+      "width": 192.140625,
+      "height": 48
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 39,
+      "height": 40
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nОснови програмування CS50",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nАнглійська для початківців. Elementary level (A1",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nПерша домедична допомога в умовах війни\n\n9.5",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nПочаток роботи з ChatGPT\n\n8.8",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nЯк почати власну справу в часи невизначеності: п",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nОснови Web UI розробки 2023\n\n8.9",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nПерша психологічна допомога\n\n9.2",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nІнженер БПЛА. Базовий курс\n\n8.8",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nНебайдужі: базові емоційні потреби та соціальна ",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nБаза: Сучасна військова підготовка\n\n9.3",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nSMM: фундамент\n\n9",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "Доступний постійно\nБезкоштовно\n\nНавчаймось вчитись: Потужні розумові інструменти",
+      "tag": "A",
+      "width": 224,
+      "height": 322
+    },
+    {
+      "name": "IT",
+      "tag": "A",
+      "width": 79.578125,
+      "height": 56
+    },
+    {
+      "name": "AI та робота з даними",
+      "tag": "A",
+      "width": 253.40625,
+      "height": 56
+    },
+    {
+      "name": "Англійська мова",
+      "tag": "A",
+      "width": 203.828125,
+      "height": 56
+    },
+    {
+      "name": "Бізнес",
+      "tag": "A",
+      "width": 119.5625,
+      "height": 56
+    },
+    {
+      "name": "Для освітян",
+      "tag": "A",
+      "width": 165.953125,
+      "height": 56
+    },
+    {
+      "name": "Військова служба",
+      "tag": "A",
+      "width": 217.21875,
+      "height": 56
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 294,
+      "height": 55.109375
+    },
+    {
+      "name": "Дізнатися більше",
+      "tag": "A",
+      "width": 294,
+      "height": 55.109375
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 39,
+      "height": 40
+    },
+    {
+      "name": "Блог\nЛюди Prometheus. Історії наших слухачів. Уляна Рубцова\n\nPrometheus — це не ",
+      "tag": "A",
+      "width": 256,
+      "height": 314.984375
+    },
+    {
+      "name": "29 Жовтня 2026",
+      "tag": "A",
+      "width": 164.9375,
+      "height": 20
+    },
+    {
+      "name": "Читати",
+      "tag": "A",
+      "width": 84.34375,
+      "height": 37
+    },
+    {
+      "name": "Блог\nЛюди Prometheus. Історії наших слухачів. Олександр Мірошниченко\n\nPrometheus",
+      "tag": "A",
+      "width": 256,
+      "height": 314.984375
+    },
+    {
+      "name": "20 Жовтня 2026",
+      "tag": "A",
+      "width": 165.1875,
+      "height": 20
+    },
+    {
+      "name": "Читати",
+      "tag": "A",
+      "width": 84.34375,
+      "height": 37
+    },
+    {
+      "name": "Блог\nОсінній онлайн-журнал\n\n🍂 Усередині — корисні матеріали, практичні поради, ",
+      "tag": "A",
+      "width": 256,
+      "height": 274.984375
+    },
+    {
+      "name": "14 Жовтня 2026",
+      "tag": "A",
+      "width": 159.65625,
+      "height": 20
+    },
+    {
+      "name": "Читати",
+      "tag": "A",
+      "width": 84.34375,
+      "height": 37
+    },
+    {
+      "name": "Блог\nЛюди Prometheus. Історії наших слухачів. Олексій Каменцев\n\nPrometheus — це ",
+      "tag": "A",
+      "width": 256,
+      "height": 314.984375
+    },
+    {
+      "name": "05 Жовтня 2026",
+      "tag": "A",
+      "width": 165.4375,
+      "height": 20
+    },
+    {
+      "name": "Читати",
+      "tag": "A",
+      "width": 84.34375,
+      "height": 37
+    },
+    {
+      "name": "Блог\nЛітній онлайн-журнал\n\n🍦 Усередині — практичні поради, досвід експертів та ",
+      "tag": "A",
+      "width": 256,
+      "height": 274.984375
+    },
+    {
+      "name": "15 Липня 2026",
+      "tag": "A",
+      "width": 147.546875,
+      "height": 20
+    },
+    {
+      "name": "Читати",
+      "tag": "A",
+      "width": 84.34375,
+      "height": 37
+    },
+    {
+      "name": "Приєднатися",
+      "tag": "A",
+      "width": 179.734375,
+      "height": 55.109375
+    },
+    {
+      "name": "Про нас",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "Корпоративне навчання",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "Співпраця",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "Політика повернення коштів",
+      "tag": "A",
+      "width": 358,
+      "height": 24
+    },
+    {
+      "name": "info@prometheus.org.ua",
+      "tag": "A",
+      "width": 202.421875,
+      "height": 24
+    },
+    {
+      "name": "+380675687433",
+      "tag": "A",
+      "width": 141.203125,
+      "height": 24
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 38,
+      "height": 38
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 160,
+      "height": 50.125
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 160,
+      "height": 50.125
+    },
+    {
+      "name": "",
+      "tag": "A",
+      "width": 160,
+      "height": 50
+    },
+    {
+      "name": "Політика конфіденційності",
+      "tag": "A",
+      "width": 200.875,
+      "height": 14
+    },
+    {
+      "name": "Допомога",
+      "tag": "A",
+      "width": 73.265625,
+      "height": 14
+    },
+    {
+      "name": "Договір публічної оферти",
+      "tag": "A",
+      "width": 190.78125,
+      "height": 14
+    },
+    {
+      "name": "Звітність",
+      "tag": "A",
+      "width": 66.453125,
+      "height": 14
+    },
+    {
+      "name": "© 2026 Prometheus",
+      "tag": "A",
+      "width": 358,
+      "height": 14
+    }
+  ]
+}
